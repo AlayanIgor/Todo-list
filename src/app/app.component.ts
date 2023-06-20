@@ -2,8 +2,10 @@ import { Component } from '@angular/core';
 
 export interface Todo {
   text: string;
-  checked: boolean;
+  isChecked: boolean;
 }
+
+const localStorageKey: string = 'myTodoList';
 
 @Component({
   selector: 'app-root',
@@ -15,16 +17,18 @@ export class AppComponent {
 
   addTodo(newTodo: Todo) {
     this.todoList.unshift(newTodo);
-    localStorage.setItem('myTodoList', JSON.stringify(this.todoList));
+    localStorage.setItem(localStorageKey, JSON.stringify(this.todoList));
   }
 
   removeTodo(index: number) {
     this.todoList.splice(index, 1);
-    localStorage.setItem('myTodoList', JSON.stringify(this.todoList));
+    localStorage.setItem(localStorageKey, JSON.stringify(this.todoList));
   }
 
   constructor() {
-    let data: any = localStorage.getItem('myTodoList');
-    this.todoList = JSON.parse(data);
+    let data: any = localStorage.getItem(localStorageKey);
+    if (JSON.parse(data)) {
+      this.todoList = JSON.parse(data);
+    }
   }
 }

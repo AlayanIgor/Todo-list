@@ -1,15 +1,15 @@
-<div class="todo" [ngClass]="{ todochecked: todo.checked }">
+<div class="todo" [ngClass]="{ todoischecked: todo.isChecked }">
   <input
-    *ngIf="todo.checked"
+    *ngIf="todo.isChecked"
     checked
     type="checkbox"
-    (click)="checkedChange()"
+    (click)="checkboxChange()"
     class="checkbox-input"
   />
   <input
-    *ngIf="!todo.checked"
+    *ngIf="!todo.isChecked"
     type="checkbox"
-    (click)="checkedChange()"
+    (click)="checkboxChange()"
     class="checkbox-input"
   />
   <div class="todo-text">{{ todo.text }}</div>

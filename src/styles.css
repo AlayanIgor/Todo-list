@@ -6,12 +6,6 @@ body {
   color: #333;
 }
 
-.app-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding-top: 10px;
-}
-
 .btn {
   display: inline-block;
   background: #333333;
@@ -31,48 +25,6 @@ body {
   opacity: 0.8;
 }
 
-.todo {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: none;
-  margin-top: 17px;
-  background-color: rgb(110, 110, 110);
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  min-height: 20px;
-}
-
-.todo-text {
-  width: 100%;
-  text-align: left;
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.text-input {
-  width: 68%;
-  height: 15px;
-  font-size: 1.3rem;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.checkbox-input {
-  height: 20px;
-  width: 20px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
 hr {
   margin-bottom: 30px;
-}
-
-.todochecked {
-  opacity: 0.6;
-  background-color: rgb(179, 179, 179);
 }

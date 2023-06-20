@@ -16,8 +16,8 @@ export class TodoComponent {
     this.removeTodo.emit(this.index);
   }
 
-  checkedChange() {
-    this.todo.checked = !this.todo.checked;
+  checkboxChange() {
+    this.todo.isChecked = !this.todo.isChecked;
     localStorage.setItem('myTodoList', JSON.stringify(this.list));
   }
 }
