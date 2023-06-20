@@ -3,13 +3,13 @@
     *ngIf="todo.isChecked"
     checked
     type="checkbox"
-    (click)="checkboxChange()"
+    (click)="changeTodoIsChecked()"
     class="checkbox-input"
   />
   <input
     *ngIf="!todo.isChecked"
     type="checkbox"
-    (click)="checkboxChange()"
+    (click)="changeTodoIsChecked()"
     class="checkbox-input"
   />
   <div class="todo-text">{{ todo.text }}</div>
