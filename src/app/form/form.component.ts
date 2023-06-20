@@ -13,7 +13,7 @@ export class FormComponent {
     if (this.text.trim()) {
       const newTodo: Todo = {
         text: this.text,
-        checked: false,
+        isChecked: false,
       };
       this.addTodo.emit(newTodo);
     }

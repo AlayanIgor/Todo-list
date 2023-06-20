@@ -1,0 +1,32 @@
+.todo {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  margin-top: 17px;
+  background-color: rgb(110, 110, 110);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  min-height: 20px;
+}
+
+.todo-text {
+  width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.checkbox-input {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.todoischecked {
+  opacity: 0.6;
+  background-color: rgb(179, 179, 179);
+}
