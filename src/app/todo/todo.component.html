@@ -1,0 +1,17 @@
+<div class="todo" [ngClass]="{ todochecked: todo.checked }">
+  <input
+    *ngIf="todo.checked"
+    checked
+    type="checkbox"
+    (click)="checkedChange()"
+    class="checkbox-input"
+  />
+  <input
+    *ngIf="!todo.checked"
+    type="checkbox"
+    (click)="checkedChange()"
+    class="checkbox-input"
+  />
+  <div class="todo-text">{{ todo.text }}</div>
+  <button class="btn" (click)="deleteTodo()">&times;</button>
+</div>
